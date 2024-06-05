@@ -99,7 +99,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: url("../images/movies/bg-little-mermaid.jpg") no-repeat;
+    background: url("../images/movies/bg-venom.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -228,10 +228,10 @@ header{
 
 }
 
-.carousel.carousel-item img{
-    max-width: 160px;
+.carousel .carousel-item img{
+    /*max-width: 160px;*/
     border-radius: 10px;
-    transform: translateX(8px) translateY(-100px);
+    /*transform: translateX(8px) translateY(-100px);*/
     object-fit: cover;
     object-position: center;
 }
