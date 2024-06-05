@@ -11,7 +11,7 @@
 }
 
 body{
-     background: #000000;
+    background: #000000;
     font-family: 'Poppins',sans-serif;
 }
 
@@ -91,13 +91,12 @@ header{
     border-right: 1px solid #fff;
 }
 
-
 .banner{
     position: relative;
     width: 100%;
-    min-height:100vh ;
+    min-height:100vh;
     padding: 0 100px;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     background: url("../images/movies/bg-little-mermaid.jpg") no-repeat;
@@ -121,7 +120,7 @@ header{
 
 .content{
     position: relative;
-    max-width: 550px;
+    max-width: 453px;
     display: none;
     visibility: hidden;
     transform: scale(0);
@@ -139,10 +138,10 @@ header{
     max-width: 250px;
 }
 
-.banner.content h4 {
+.banner .content h4{
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .banner .content h4 span{
@@ -150,11 +149,11 @@ header{
     border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.banner.content h4 span:first-child{
+.banner .content h4 span:first-child{
     padding-left: 0;
 }
 
-.banner.content h4 span:last-child{
+.banner .content h4 span:last-child{
     border-right: none;
 }
 
@@ -166,12 +165,16 @@ header{
     border-radius: 2px;
 }
 
-.banner.content p {
+.banner .content p {
     font-size: 1em;
     font-weight: 300;
     line-height: 1.5em;
     color: #fff;
     margin: 10px 0 20px;
+}
+
+.banner .content .button{
+    position: relative;
 }
 
 .banner .content .button a{
@@ -198,9 +201,9 @@ header{
     background:var(--primary)
 }
 
-.banner.carousel-box{
+.banner .carousel-box {
     position: relative;
-    min-width: 950px;
+    min-width: 619px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,18 +216,20 @@ header{
 
 .carousel{
     position: relative;
-    height: 550px;
+    height: 405px;
     perspective: 1500px;
+    margin-top: -70px;
+    margin-bottom: 20px;
 }
 
-.carousel .carousel-item{
+.carousel.carousel-item{
     width: 250px;
     cursor: pointer;
 
 }
 
 .carousel.carousel-item img{
-    max-width: 235px;
+    max-width: 160px;
     border-radius: 10px;
     transform: translateX(8px) translateY(-100px);
     object-fit: cover;
