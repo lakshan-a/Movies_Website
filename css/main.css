@@ -11,7 +11,7 @@
 }
 
 body{
-    background: #000000;
+     background: #000000;
     font-family: 'Poppins',sans-serif;
 }
 
@@ -70,7 +70,7 @@ header{
     height: 100%;
     color: #fff;
     background: transparent;
-    border: 1 solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     outline: none;
     border-radius: 4px;
     padding: 0 10px 0 45px !important;
@@ -102,7 +102,7 @@ header{
     align-items: center;
     background: url("../images/movies/bg-little-mermaid.jpg") no-repeat;
     background-size: cover;
-    background-position: hidden;
+    background-position: center;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -157,3 +157,113 @@ header{
 .banner.content h4 span:last-child{
     border-right: none;
 }
+
+.banner .content h4 span i{
+    background: var(--primary);
+    color: #fff;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.banner.content p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 10px 0 20px;
+}
+
+.banner .content .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: var(--primary);
+    color: #fff;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.banner .content .button a:nth-child(2){
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner .content .button a:hover:nth-child(2){
+    background:var(--primary)
+}
+
+.banner.carousel-box{
+    position: relative;
+    min-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 50px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.carousel{
+    position: relative;
+    height: 550px;
+    perspective: 1500px;
+}
+
+.carousel .carousel-item{
+    width: 250px;
+    cursor: pointer;
+
+}
+
+.carousel.carousel-item img{
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-100px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.play{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer !important;
+    transition: 0.3s;
+}
+
+.play i {
+    margin-right: 10px;
+    font-size: 40px;
+    cursor: pointer !important;
+}
+.play:hover{
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
