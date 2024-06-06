@@ -23,7 +23,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 100px;
+    padding: 10px 100px;
     z-index: 10;
 }
 
@@ -58,8 +58,8 @@ header{
 
 .search{
     position: relative;
-    width: 300px;
-    height: 40px;
+    width: 270px;
+    height: 48px;
 }
 
 .search input{
@@ -136,6 +136,7 @@ header{
 
 .move-title {
     max-width: 250px;
+    margin-bottom: 10px;
 }
 
 .banner .content h4{
@@ -214,7 +215,7 @@ header{
     border-radius: 10px;
 }
 
-.carousel{
+.carousel {
     position: relative;
     height: 405px;
     perspective: 1500px;
@@ -222,7 +223,7 @@ header{
     margin-bottom: 20px;
 }
 
-.carousel.carousel-item{
+.carousel.carousel-item {
     width: 250px;
     cursor: pointer;
 
@@ -231,9 +232,9 @@ header{
 .carousel .carousel-item img{
     /*max-width: 160px;*/
     border-radius: 10px;
-    /*transform: translateX(8px) translateY(-100px);*/
-    object-fit: cover;
-    object-position: center;
+    transform: translateX(8px) translateY(-100px);
+    object-fit:cover;
+    object-position:center;
 }
 
 .play{
@@ -322,7 +323,72 @@ header{
     max-width: 30px;
 }
 
+@media (max-width: 500px) {
+    .banner {
+        text-align: center;
+        padding: 70px 28px;
+        display: block;
 
+    }
+    .carousel .carousel-item img {
+        max-width: 145px;
+        margin-top: 50px;
+    }
+
+    .carousel {
+        height: 340px;
+        margin-top: -95px;
+        margin-bottom: 15px;
+    }
+
+    .banner .carousel-box {
+        min-width: 264px;
+        margin-left: 4px;
+        margin-top: 17px;
+    }
+
+    .sci {
+        position: relative;
+        bottom: -10px;
+        right: 0px;
+    }
+    .play {
+        position: relative;
+        bottom: -10px;
+        left: 0px;
+    }
+    header{
+        display: none;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    .banner {
+        text-align: center;
+        padding: 70px 28px;
+        display: block;
+    }
+
+    .content {
+        max-width: 900px;
+    }
+
+    .banner .carousel-box {
+        margin-top: 25px;
+        min-width: 430px;
+    }
+
+    .play {
+        bottom: 20px;
+    }
+    .sci{
+        bottom: 20px;
+    }
+    header{
+        display: none;
+    }
+}
 
 
 
